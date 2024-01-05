@@ -13,5 +13,12 @@ while True:
         if pot.upper() == 'QUIT':
             print('Thanks for playing')
             sys.exit
-        
-        
+        elif not pot.isdecimal():
+            print('PLease enter whole number')
+        elif int(pot) > purse:
+            print ('You do not have enough $ for the bet')
+        else:
+            pot= int(pot)
+            break 
+
+            
