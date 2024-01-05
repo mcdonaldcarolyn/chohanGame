@@ -9,4 +9,9 @@ purse = 5000
 while True: 
     print('you have', purse, 'mon. How much do you bet? (or Quit)')
     while True 
+        pot = input('> ')
+        if pot.upper() == 'QUIT':
+            print('Thanks for playing')
+            sys.exit
+        
         
