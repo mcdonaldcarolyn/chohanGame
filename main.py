@@ -12,7 +12,7 @@ while True:
         pot = input('> ')
         if pot.upper() == 'QUIT':
             print('Thanks for playing')
-            sys.exit
+            sys.exit()
         elif not pot.isdecimal():
             print('PLease enter whole number')
         elif int(pot) > purse:
@@ -33,7 +33,7 @@ while True:
         else:
             break
 
-    rollIsEven = (dice1 + dice2) %2 = 0
+    rollIsEven = (dice1 + dice2) % 2 == 0
     if rollIsEven:
         correctBet = 'CHO'
     else:
@@ -49,5 +49,10 @@ while True:
     else:
         purse = purse - pot 
         print ('you lost')
+    
+    if purse == 0:
+        print('you have run out of money ')
+        sys.exit()
+
         
             
