@@ -23,5 +23,7 @@ while True:
     dice1 = random.randint(1, 6)
     dice2 = random.randint(1, 6)
 
+    print ('the dealer swirls the cup (rattle of the dice) and slams down- is it even/Cho or odd/han')  
+
     
             
