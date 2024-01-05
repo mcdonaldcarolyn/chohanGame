@@ -30,5 +30,15 @@ while True:
         if bet != 'CHO' and bet != 'HAN':
             print("please enter CHO or HAN")
             continue 
+        else:
+            break
+
+    rollIsEven = (dice1 + dice2) %2 = 0
+    if rollIsEven:
+        correctBet = 'CHO'
+    else:
+        correctBet = 'HAN'
+
+    playerWon = bet == correctBet
         
             
