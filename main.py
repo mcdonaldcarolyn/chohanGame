@@ -25,5 +25,10 @@ while True:
 
     print ('the dealer swirls the cup (rattle of the dice) and slams down- is it even/Cho or odd/han')  
 
-    
+    while True:
+        bet = input('> ').upper()
+        if bet != 'CHO' and bet != 'HAN':
+            print("please enter CHO or HAN")
+            continue 
+        
             
