@@ -8,7 +8,7 @@ purse = 5000
 
 while True: 
     print('you have', purse, 'mon. How much do you bet? (or Quit)')
-    while True 
+    while True:
         pot = input('> ')
         if pot.upper() == 'QUIT':
             print('Thanks for playing')
@@ -40,5 +40,14 @@ while True:
         correctBet = 'HAN'
 
     playerWon = bet == correctBet
+
+    if playerWon:
+        print('You won! You take', pot, 'mon. ')
+        purse = purse + pot 
+        print ('the house collects a', pot//10, 'mon fee.')
+        purse = purse - (pot//10 )
+    else:
+        purse = purse - pot 
+        print ('you lost')
         
             
