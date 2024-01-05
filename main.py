@@ -20,5 +20,8 @@ while True:
         else:
             pot= int(pot)
             break 
+    dice1 = random.randint(1, 6)
+    dice2 = random.randint(1, 6)
 
+    
             
