@@ -52,6 +52,7 @@ while True:
     
     if purse == 0:
         print('you have run out of money ')
+        print('Thank you for playing')
         sys.exit()
 
         
